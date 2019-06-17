@@ -1,0 +1,27 @@
+/* -------------Стандарт подключения-------- */
+/* @font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+} */
+/* -------------Стандарт подключения-------- */
+@import "http://fonts.fontstorage.com/import/amble.css";
+
+@font-face{ 
+	font-family: 'Big John';
+	src: url("../fonts/BigJohn/BigJohn.otf") format("opentype");
+}
+
+@font-face{ 
+	font-family: 'Slim Joe';
+	src: url("../fonts/SlimJoe/SlimJoe.otf") format("opentype");
+}
+
+/* @font-face{ 
+	font-family: 'Amble Regular';
+	src: url('../fonts/amble/amble-regular.ttf');
+	src: url('../fonts/amble/amble-regular.ttf') format('truetype');
+} */

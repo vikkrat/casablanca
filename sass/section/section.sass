@@ -1,0 +1,223 @@
+.section
+    display: flex
+    width: 100%
+    height: auto
+    margin: 0 auto
+    box-sizing: border-box
+    &_theme-white
+        display: block
+        min-height: 500px
+        background-color: #ffffff
+        text-align: center
+        padding-top: 90px
+        // padding: 120px (429/1600*100%)
+    &__title
+        color: #222222
+        font-family: Big John
+        font-size: 30px
+        font-weight: 400
+        line-height: 60px
+        text-transform: uppercase
+    &__hr
+        width: 86px
+        height: 2px
+        background-color: #222222
+        border: none
+        margin: 70px auto
+    &__graph
+        max-width: 745px
+        color: #222222
+        font-family: 'Amble'
+        font-size: 22px
+        font-weight: 300
+        line-height: 36px
+        margin: 0 auto
+    &_theme-creativity
+        display: block
+        height:500px
+        text-align: center
+        padding-top: 200px
+        padding-bottom: 200px
+        // padding-left: 585 / 1600 * 100%
+        // padding-right: 585 / 1600 * 100%
+        background: #222222 url("../img/section/img_01_section.png")
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: fixed
+    &__button
+        width: 430 / 1600 * 100%
+        height: 100px
+        border: 3px solid #ffffff
+        background: transparent
+        background-repeat: no-repeat
+        width: 228px
+        color: #ffffff
+        font: 30px/60px
+        font-weight: 700
+        letter-spacing: 1.2px
+        box-sizing: border-box
+        outline: none
+        cursor: pointer
+    &_theme-gallery
+        display: block
+        height: auto
+        text-align: center
+        padding-top: 120px
+        padding-bottom: 80px
+        padding-left: 215 / 1600 * 100%
+        padding-right: 215 / 1600 * 100%
+        background-color: #ffffff
+    &__nav
+        width: auto
+        margin-top: 80px
+        margin-left: 400 / 1600 * 100%
+        margin-right: 400 / 1600 * 100%
+        display: flex
+        justify-content: space-between
+    &__link
+        color: #222222
+        font: 18px/36px
+        font-weight: 400
+        text-transform: uppercase
+        padding: 10px
+        text-decoration: none
+
+        &:hover
+            font-weight: 700
+    &_theme_help
+        display: block
+        height:500px
+        text-align: center
+        padding-top: 200px
+        padding-bottom: 200px
+        padding-left: 585 / 1600 * 100%
+        padding-right: 585 / 1600 * 100%
+        background: #222222 url("../img/section/img_02_section.png")
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: fixed
+    &_theme_clients
+        display: block
+        min-height:500px
+        background-color: #f4f4f4
+        text-align: center
+        padding-top: 120px
+        padding-bottom: 120px
+        padding-left: 215/1600*100%
+        padding-right: 215/1600*100%
+    &__nav_clients
+        margin: 0 auto
+        width: auto
+        margin-top: 103px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        & a:hover
+            transform: scale(1.5)
+            transition: transform 1.5s ease
+    &_theme_quote
+        display: block
+        height:500px
+        text-align: center
+        padding-top: 200px
+        padding-bottom: 200px
+        padding-left: 585 / 1600 * 100%
+        padding-right: 585 / 1600 * 100%
+        background: #222222 url("../img/section/img_04_section.png")
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: fixed
+    &_theme_base
+        display: block
+        height:500px
+        background-color: #ffffff
+        text-align: center
+        padding: 120px (429/1600*100%)
+    &_theme_video
+        display: block
+        height:500px
+        text-align: center
+        padding-top: 200px
+        padding-bottom: 200px
+        padding-left: 585 / 1600 * 100%
+        padding-right: 585 / 1600 * 100%
+        background: #222222 url("../img/section/img_03_section.png")
+        background-repeat: no-repeat
+        background-size: cover
+        background-attachment: fixed
+    &_gallery
+        margin: 0 auto
+        width: 85%
+        display: flex
+        flex-wrap: wrap  
+        justify-content:  center
+        padding: 80px 115px
+        overflow: hidden
+    &__button_gallery
+        width: 370px
+        height: 60px
+        border: 3px solid #222222
+        color: #222222
+        font: 24px/60px Amble
+        font-weight: 700
+        line-height: 60px
+        letter-spacing: 0.96px
+        margin-bottom: 80px
+        background: transparent
+        background-repeat: no-repeat
+        outline: none
+        text-align: center
+        vertical-align: text-top
+        cursor: pointer
+.gallery__item
+    width: 370px
+    height: 420px
+    margin: 10px 15px
+    background-size: contain
+    background-repeat: no-repeat
+    &_theme_1
+        background: #e9e9e9 url("../img/gallery/img_01_gallery.png")
+    &_theme_2
+        background: #e9e9e9 url("../img/gallery/img_02_gallery.png")
+    &_theme_3
+        background: #e9e9e9 url("../img/gallery/img_03_gallery.png")
+    &_theme_4
+        background: #e9e9e9 url("../img/gallery/img_04_gallery.png")
+    &_theme_5
+        background: #e9e9e9 url("../img/gallery/img_05_gallery.png")
+    &_theme_6
+        background: #e9e9e9 url("../img/gallery/img_06_gallery.png")
+    &:hover .gallery__item_theme_hv
+        // transform: rotateY(0)
+        width: 370px
+        opacity: 0.75
+        padding: 60px 60px
+        border: 8px solid #000000
+.gallery__item_theme_hv
+        display: block
+        // transform: rotateY(90deg)
+        width: 0px
+        height: 420px
+        // position: absolute
+        // top: 0
+        // left: 0
+        border: none
+        background-color: #000000
+        opacity: 0
+        padding: 0
+        transition: all 1s ease-in-out
+        &_title
+            color: #ffffff
+            font: 18px/60px "Big John"
+            font-weight: 400
+            text-transform: uppercase
+        &_graph
+            color: #ffffff
+            font: 24px/60px 'Amble'
+            font-weight: 400
+        &_hr
+             width: 48px
+             height: 2px
+             background-color: #d87843
+             border: none
+
